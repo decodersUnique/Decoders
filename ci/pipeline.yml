@@ -1,0 +1,28 @@
+resources:
+- name: decoders
+  type: git
+  source:
+      uri: {{github-uri}}
+      branch: {{github-branch}}
+      username: decodersUnique
+      password: hello2012
+- name: staging-app
+  type: cf
+  source:
+      api: {{cf-api}}
+      username: {{cf-username}}
+      password: {{cf-password}}
+      organization: {{cf-org}}
+      space: {{cf-space}}
+      skip_cert_check: true
+
+jobs:
+- name: test-app
+  plan:
+  - get: decoders
+    trigger: true
+  - task: tests
+    file: ci/tasks/build.yml
+  - put: staging-app
+    params:
+      manifest: \manifest.yml

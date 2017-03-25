@@ -1,0 +1,8 @@
+github-uri: https://github.com/decodersUnique/Decoders.git
+github-branch: master
+cf-api: https://api.run.pivotal.io
+cf-username: hiteshgupta86@gmail.com
+cf-password: Unique@2017
+cf-org: uniqueDecoders
+cf-space: development	
+cf-manifest-host: decoders

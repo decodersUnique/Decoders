@@ -1,0 +1,13 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: java
+    tag: 2.3.0
+
+inputs:
+- name: decoders
+
+run:
+  path: Decoders/ci/tasks/build.sh
