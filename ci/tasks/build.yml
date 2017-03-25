@@ -10,4 +10,5 @@ inputs:
 - name: decoders
 
 run:
-  path: decoders/ci/tasks/build.sh
+  path: sh
+  args: ["decoders/ci/tasks/build.sh"]
