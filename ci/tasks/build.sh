@@ -2,7 +2,7 @@
 
 set -e -x
 
-chmod -R 777 decoders/
+echo pwd
 cd decoders
 echo "test"
 gradle build
