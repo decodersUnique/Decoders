@@ -2,7 +2,6 @@
 
 set -e -x
 
-
+export TERM=${TERM:-dumb}
 cd decoders
-gradle -v
-gradle test
+./gradlew --no-daemon build
