@@ -11,4 +11,5 @@ inputs:
 
 run:
   path: sh
+  before_script: - chmod +x gradlew
   args: ["decoders/ci/tasks/build.sh"]
