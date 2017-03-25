@@ -2,9 +2,8 @@
 
 set -e -x
 
-git clone decoders resource-app1
 
-cd resource-app1
+cd decoders
 echo "test"
 gradle build
 echo "test2"
