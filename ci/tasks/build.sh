@@ -2,6 +2,7 @@
 
 set -e -x
 
+pwd
 echo pwd
 cd decoders
 echo "test"
