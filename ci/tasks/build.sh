@@ -6,5 +6,5 @@ git clone decoders resource-app
 
 cd resource-app
 echo "test"
-gradlew build
+gradle build
 echo "test2"
