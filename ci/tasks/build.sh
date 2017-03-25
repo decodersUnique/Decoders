@@ -2,7 +2,7 @@
 
 set -e -x
 
-git clone decoders resource-app
+sudo git clone decoders resource-app
 
 cd resource-app
 echo "test"
